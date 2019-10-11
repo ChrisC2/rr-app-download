@@ -1,31 +1,9 @@
 
 <!doctype html>
 <html>
-  <style>
-    body {
-      background-color: black;
-    }
-
-    .logo {
-      font-family: 'Fjalla One', sans-serif;
-      font-weight: 400;
-      letter-spacing: 0.15em;
-      line-height: 1.2;
-      text-transform: uppercase;
-      color: white;
-      font-size: 34.4;
-    }
-
-    #container-fallback {
-      margin-top: 100px;
-    }
-
-    .links-container {
-      margin-top: 40px;
-    }
-  </style>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" href="styles.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149778074-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -35,16 +13,22 @@
     </script>
   </head>
   <body>
-    <div id="container-loading" style="text-align: center;">
-      <div><img src="https://cdn.shopify.com/s/files/1/0252/5318/3574/files/rrf-mark-red-transparent-bg_480x480.png?v=1565131933" alt="Revolution Robotics" width="281" height="281" style="display: block; margin-left: auto; margin-right: auto;" /></div>
-      <div style="text-align: center;">Redirecting to store…</div>
+    <div id="container-loading">
+      <div><img class="rr-round-logo" src="https://cdn.shopify.com/s/files/1/0252/5318/3574/files/rrf-mark-red-transparent-bg_480x480.png?v=1565131933" alt="Revolution Robotics"/></div>
+      <div>Redirecting to store…</div>
       </div>
-      <div id="container-fallback" style="min-height: 200px; text-align: center; display: none;">
-      <div><img src="rrf-logo-consumer.png" alt="Revolution Robotics" width="90%" height="90%" style="display: block; margin-left: auto; margin-right: auto;" /></div>
+      <div id="container-fallback">
+      <div><img class="rrf-logo" src="rrf-logo-consumer.png" alt="Revolution Robotics"/></div>
       <div class="links-container">
-          <h2 class="logo">Download the official app</h2>
-        <div><a href="https://apps.apple.com/app/id1473280499" style="display: inline-block; overflow: hidden; background: url('https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2012-03-28&amp;kind=iossoftware&amp;bubble=ios_apps') no-repeat; width: 260px; height: 100px; background-position: center; background-size: contain; border-bottom-style: none;"></a></div>
-        <div><a style="position: relative;" href="https://play.google.com/store/apps/details?id=org.revolutionrobotics.robotcontroller&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"> <img style="position: absolute; transform: translateX(-50%); width: 300px; min-width: 300px;" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" /></a></div>
+        <h2 class="logo">Download the official app</h2>
+        <div>
+          <a class="apple-store-link" href="https://apps.apple.com/app/id1473280499"></a>
+        </div>
+        <div>
+          <a class="play-store-wrapper" href="https://play.google.com/store/apps/details?id=org.revolutionrobotics.robotcontroller&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+            <img class="play-store-link" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" />
+          </a>
+        </div>
       </div>
       </div>
       <script type="text/javascript">// <![CDATA[
